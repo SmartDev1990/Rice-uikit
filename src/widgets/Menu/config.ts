@@ -120,7 +120,7 @@ export const socials = [
     items: [
       {
         label: "English",
-        href: "https://t.me/rice_pro,
+        href: "https://t.me/rice_pro",
       },
       {
         label: "Announcements",
