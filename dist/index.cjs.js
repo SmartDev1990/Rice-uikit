@@ -1435,7 +1435,7 @@ var sortDataInOrder = function (data, columns) {
 };
 var makeRender = function (
 // eslint-disable-next-line
-value,
+value, 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 render, row) {
     return render ? function () { return render({ row: row, value: value }); } : function () { return value; };
@@ -2230,21 +2230,12 @@ var socials = [
                 label: "English",
                 href: "https://t.me/rice_pro",
             },
-            {
-                label: "Announcements",
-                href: "https://t.me/rice_channel",
-            },
         ],
     },
     {
         label: "Twitter",
         icon: "TwitterIcon",
         href: "https://twitter.com/protocolrice",
-    },
-    {
-        label: "Reddit",
-        icon: "RedditIcon",
-        href: "",
     },
 ];
 var MENU_HEIGHT = 64;
@@ -2389,7 +2380,7 @@ var PanelFooter = function (_a) {
                     React__default['default'].createElement(Text, { color: "textDisabled", mx: "4px" }, "/"),
                     React__default['default'].createElement(MoonIcon, { color: isDark ? "text" : "textDisabled", width: "24px" }))),
             React__default['default'].createElement(Dropdown, { position: "top-right", target: React__default['default'].createElement(Button, { variant: "text", startIcon: React__default['default'].createElement(LanguageIcon, { color: "textSubtle", width: "24px" }) },
-                    React__default['default'].createElement(Text, { color: "textSubtle" }, currentLang === null || currentLang === void 0 ? void 0 : currentLang.toUpperCase())) }, langs.map(function (lang) { return (React__default['default'].createElement(MenuButton, { key: lang.code, fullWidth: true, onClick: function () { return setLang(lang); },
+                    React__default['default'].createElement(Text, { color: "textSubtle" }, currentLang === null || currentLang === void 0 ? void 0 : currentLang.toUpperCase())) }, langs.map(function (lang) { return (React__default['default'].createElement(MenuButton, { key: lang.code, fullWidth: true, onClick: function () { return setLang(lang); }, 
                 // Safari fix
                 style: { minHeight: "32px", height: "auto" } }, lang.language)); })))));
 };
